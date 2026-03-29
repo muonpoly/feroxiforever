@@ -301,15 +301,9 @@
 
 - type: entity
   parent: N14FreeTableBase
-<<<<<<< HEAD
-  id: N14TableDeskWood
-  name: wooden desk
-  description: A wooden desk for working at.
-=======
-  id: N14TableDeskWoodAlt # DeltaV
-  name: office desk # DeltaV
-  description: An office desk for working at. # DeltaV
->>>>>>> aa9539ab5f8 (Apply suggestions from code review)
+  id: N14TableDeskWood2 
+  suffix: alt # DeltaV
+  description: A desk for working at. # DeltaV
   components:
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/Tables/desks.rsi
@@ -332,14 +326,9 @@
         - TableLayer
 
 - type: entity
-<<<<<<< HEAD
-  parent: N14TableDeskWood
-  id: N14TableDeskWood2
-  suffix: alt
-=======
-  parent: N14TableDeskWoodAlt # DeltaV
+  parent: N14TableDeskWood2 
   id: N14TableDeskWood # DeltaV
->>>>>>> aa9539ab5f8 (Apply suggestions from code review)
+  name: office desk
   components:
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/64x64_furniture.rsi
