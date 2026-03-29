@@ -74,7 +74,7 @@
 # 32x32 tables
 - type: entity
   parent: N14FreeMetalTableBase # Begin DeltaV Additions
-  id: N14TableMetalCircle
+  id: N14TableMetalRound
   name: circular metal table
   description: A cold handmade circular metal table. # End DeltaV Additions
   components:
@@ -84,7 +84,7 @@
     snapCardinals: true # DeltaV
   - type: Construction # DeltaV
     graph: N14TableRecipes
-    node: N14MetalCircle
+    node: N14MetalRound # End DeltaV Additions
 
 - type: entity
   id: N14TableMetalRoundDirty
@@ -122,7 +122,7 @@
 
 - type: entity
   parent: N14TableWoodSquare
-  id: N14TableWoodCircle
+  id: N14TableWoodRound
   name: circular wooden table
   description: A circular wooden table.
   components:
@@ -132,7 +132,7 @@
     snapCardinals: true # DeltaV
   - type: Construction # DeltaV
     graph: N14TableRecipes
-    node: N14WoodCircle # End DeltaV Additions
+    node: N14WoodRound # End DeltaV Additions
 
 - type: entity
   parent: N14TableWoodSquare
@@ -201,13 +201,8 @@
     state: tableframe_wood
   - type: Construction
     graph: N14TableRecipes
-<<<<<<< HEAD
-    node: N14WoodFrame
-  - type: Clickable
-=======
     node: N14WoodFrame 
   - type: Clickable # End DeltaV Additions
->>>>>>> aa9539ab5f8 (Apply suggestions from code review)
 
 #64x64 tables
 - type: entity
@@ -224,11 +219,7 @@
       fix1:
         shape:
           !type:PhysShapeAabb
-<<<<<<< HEAD
-            bounds: "-0.35,0,1.35,0.45"
-=======
             bounds: "-0.39,-.35,1.35,0.435" # DeltaV
->>>>>>> aa9539ab5f8 (Apply suggestions from code review)
         density: 55
         mask: # tables should collide with other tables
         - TableMask
@@ -314,11 +305,7 @@
       fix1:
         shape:
           !type:PhysShapeAabb
-<<<<<<< HEAD
-            bounds: "-0,0,1,0.45"
-=======
             bounds: "-0.5,-.36,1.45,0.45" # DeltaV
->>>>>>> aa9539ab5f8 (Apply suggestions from code review)
         density: 55
         mask: # tables should collide with other tables
         - TableMask
@@ -333,11 +320,6 @@
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/64x64_furniture.rsi
     state: desk_wood
-<<<<<<< HEAD
-  - type: Construction
-    graph: N14TableRecipes
-    node: N14DeskWood2
-=======
   - type: Fixtures # Begin DeltaV Additions
     fixtures:
       fix1:
@@ -352,7 +334,6 @@
   - type: Construction
     graph: N14TableRecipes
     node: N14DeskWood # End DeltaV Additions
->>>>>>> aa9539ab5f8 (Apply suggestions from code review)
 
 - type: entity
   parent: N14FreeTableBase
@@ -362,8 +343,6 @@
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/64x64_furniture.rsi
     state: desk_wood_small
-<<<<<<< HEAD
-=======
   - type: Fixtures # Begin DeltaV Additions
     fixtures:
       fix1:
@@ -375,7 +354,6 @@
         - TableMask
         layer:
         - TableLayer # End DeltaV Additions
->>>>>>> aa9539ab5f8 (Apply suggestions from code review)
 
 - type: entity
   parent: N14TableDeskWood
@@ -437,13 +415,8 @@
 - type: entity
   parent: N14FreeTableBase
   id: N14TableCounter
-<<<<<<< HEAD
-  name: wood counter
-  description: Give me a drink, bartender
-=======
   name: wood counter # DeltaV
   description: A wooden counter. Give me a drink, bartender. # DeltaV
->>>>>>> aa9539ab5f8 (Apply suggestions from code review)
   suffix: full
   components:
   - type: Sprite

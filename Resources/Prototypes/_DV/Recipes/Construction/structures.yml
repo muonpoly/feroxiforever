@@ -92,8 +92,8 @@
 
 - type: construction
   id: RailingCornerSmallDeltaV
-  name: reinforced plasteel railing corner (small)
-  graph: Railing
+  name: structure-wall-reinforced-plasteel-railing-corner-small
+  graph: RailingDeltaVRecipes
   startNode: start
   targetNode: railingCornerSmallDeltaV
   category: construction-category-structures
