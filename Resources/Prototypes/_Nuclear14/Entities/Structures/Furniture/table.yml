@@ -497,9 +497,9 @@
     sprite: _Nuclear14/Structures/Furniture/Tables/counters.rsi
     state: wood_counter_cross
     snapCardinals: true # DeltaV
-  - type: Construction
-    graph: N14TableRecipes
-    node: N14WoodCounterCross
+  - type: Construction # DeltaV
+    graph: N14TableRecipes # DeltaV
+    node: N14WoodCounterCross # DeltaV
 
 - type: entity
   parent: N14TableCounter
@@ -510,9 +510,9 @@
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/Tables/counters.rsi
     state: craft_counter
-  - type: Construction
-    graph: N14TableRecipes
-    node: N14WoodCraftCounter
+  - type: Construction # DeltaV
+    graph: N14TableRecipes # DeltaV
+    node: N14WoodCraftCounter # DeltaV
 
 - type: entity
   parent: N14TableCounter
@@ -522,9 +522,9 @@
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/Tables/counters.rsi
     state: craft_counter_bend
-  - type: Construction
-    graph: N14TableRecipes
-    node: N14WoodCraftCounterBend
+  - type: Construction # DeltaV
+    graph: N14TableRecipes # DeltaV
+    node: N14WoodCraftCounterBend # DeltaV
 
 - type: entity
   parent: N14TableCounter
@@ -534,9 +534,9 @@
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/Tables/counters.rsi
     state: craft_counter_intersect
-  - type: Construction
-    graph: N14TableRecipes
-    node: N14WoodCraftCounterIntersect
+  - type: Construction # DeltaV
+    graph: N14TableRecipes # DeltaV
+    node: N14WoodCraftCounterIntersect # DeltaV
 
 - type: entity
   parent: N14TableCounter
@@ -547,12 +547,12 @@
     sprite: _Nuclear14/Structures/Furniture/Tables/counters.rsi
     state: craft_counter_cross
     snapCardinals: true # DeltaV 
-  - type: Construction
-    graph: N14TableRecipes
-    node: N14WoodCraftCounterCross
+  - type: Construction # DeltaV
+    graph: N14TableRecipes # DeltaV
+    node: N14WoodCraftCounterCross # DeltaV
 
 - type: entity
-  parent: N14FreeMetalTableBase
+  parent: N14FreeMetalTableBase # DeltaV
   id: N14TableCounterMetal
   name: metal counter
   description: A cold, hard metal counter.
@@ -560,9 +560,9 @@
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/Tables/counters.rsi
     state: metal_counter
-  - type: Construction
-    graph: N14TableRecipes
-    node: N14MetalCounter
+  - type: Construction # DeltaV
+    graph: N14TableRecipes # DeltaV
+    node: N14MetalCounter # DeltaV
 
 - type: entity
   parent: N14TableCounterMetal
@@ -572,9 +572,9 @@
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/Tables/counters.rsi
     state: metal_counter_bend
-  - type: Construction
-    graph: N14TableRecipes
-    node: N14MetalCounterBend
+  - type: Construction # DeltaV
+    graph: N14TableRecipes # DeltaV
+    node: N14MetalCounterBend # DeltaV
 
 - type: entity
   parent: N14TableCounterMetal
@@ -584,9 +584,9 @@
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/Tables/counters.rsi
     state: metal_counter_intersect
-  - type: Construction
-    graph: N14TableRecipes
-    node: N14MetalCounterIntersect
+  - type: Construction # DeltaV
+    graph: N14TableRecipes # DeltaV
+    node: N14MetalCounterIntersect # DeltaV
 
 - type: entity
   parent: N14TableCounterMetal
@@ -597,9 +597,9 @@
     sprite: _Nuclear14/Structures/Furniture/Tables/counters.rsi
     state: metal_counter_cross
     snapCardinals: true # DeltaV - furniture rework
-  - type: Construction
-    graph: N14TableRecipes
-    node: N14MetalCounterCross
+  - type: Construction # DeltaV
+    graph: N14TableRecipes # DeltaV
+    node: N14MetalCounterCross # DeltaV
 
 - type: entity
   id: N14TableMetalGrate
@@ -613,4 +613,4 @@
     sprite: _Nuclear14/Structures/Furniture/Tables/metalgrate.rsi
   - type: Construction
     graph: N14TableMetalGrateRecipes
-    node: TableMetalGrate
+    node: TableMetalGrate # DeltaV
