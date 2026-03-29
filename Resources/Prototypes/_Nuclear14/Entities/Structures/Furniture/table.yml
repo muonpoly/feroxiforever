@@ -21,7 +21,7 @@
         spawn:
           MaterialWoodPlank1: # DeltaV
             min: 1
-            max: 2
+            max: 2 # DeltaV
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: PlaceableSurface
@@ -73,10 +73,10 @@
 
 # 32x32 tables
 - type: entity
-  parent: N14FreeMetalTableBase
+  parent: N14FreeMetalTableBase # Begin DeltaV Additions
   id: N14TableMetalCircle
   name: circular metal table
-  description: A cold handmade circular metal table.
+  description: A cold handmade circular metal table. # End DeltaV Additions
   components:
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/Tables/tables.rsi
@@ -116,7 +116,7 @@
         - TableMask
         layer:
         - TableLayer
-  - type: Construction # DeltaV
+  - type: Construction # Begin DeltaV Additions
     graph: N14TableRecipes
     node: N14WoodSquare
 
@@ -127,17 +127,17 @@
   description: A circular wooden table.
   components:
   - type: Sprite
-    sprite: _Nuclear14/Structures/Furniture/Tables/tables.rsi
+    sprite: _DV/Structures/Furniture/N14Tables/tables.rsi
     state: table_wood_round
     snapCardinals: true # DeltaV
   - type: Construction # DeltaV
     graph: N14TableRecipes
-    node: N14WoodCircle
+    node: N14WoodCircle # End DeltaV Additions
 
 - type: entity
   parent: N14TableWoodSquare
   id: N14TableWoodLow
-  name: wooden coffee table
+  name: wooden coffee table # DeltaV
   description: A low wooden square table.
   components:
   - type: Sprite
@@ -201,12 +201,17 @@
     state: tableframe_wood
   - type: Construction
     graph: N14TableRecipes
+<<<<<<< HEAD
     node: N14WoodFrame
   - type: Clickable
+=======
+    node: N14WoodFrame 
+  - type: Clickable # End DeltaV Additions
+>>>>>>> aa9539ab5f8 (Apply suggestions from code review)
 
 #64x64 tables
 - type: entity
-  parent: N14FreeMetalTableBase
+  parent: N14FreeMetalTableBase # DeltaV
   id: N14TableDeskMetal
   name: metal desk
   description: A metal desk for working at. Sturdy.
@@ -219,18 +224,22 @@
       fix1:
         shape:
           !type:PhysShapeAabb
+<<<<<<< HEAD
             bounds: "-0.35,0,1.35,0.45"
+=======
+            bounds: "-0.39,-.35,1.35,0.435" # DeltaV
+>>>>>>> aa9539ab5f8 (Apply suggestions from code review)
         density: 55
         mask: # tables should collide with other tables
         - TableMask
         layer:
         - TableLayer
-  - type: Construction
-    graph: N14TableRecipes
-    node: N14DeskMetal
+  - type: Construction # DeltaV
+    graph: N14TableRecipes # DeltaV
+    node: N14DeskMetal # DeltaV
 
 - type: entity
-  parent: BaseStructure
+  parent: BaseStructure # Begin DeltaV Additions
   id: N14MetalTableFrame
   name: metal frame
   description: Pieces of metal that make up the frame of an unfinished object.
@@ -274,7 +283,7 @@
   - type: Clickable
 
 - type: entity
-  parent: N14FreeMetalTableBase
+  parent: N14FreeMetalTableBase # End DeltaV Additions
   id: N14TableDeskMetalDirty
   suffix: dirty
   components:
@@ -283,7 +292,7 @@
     state: desk_metal_dirty # DeltaV - added clean version, renamed and added old texture to dirty
 
 - type: entity
-  parent: N14FreeMetalTableBase
+  parent: N14FreeMetalTableBase # DeltaV
   id: N14TableDeskMetalSmall
   components:
   - type: Sprite
@@ -292,9 +301,15 @@
 
 - type: entity
   parent: N14FreeTableBase
+<<<<<<< HEAD
   id: N14TableDeskWood
   name: wooden desk
   description: A wooden desk for working at.
+=======
+  id: N14TableDeskWoodAlt # DeltaV
+  name: office desk # DeltaV
+  description: An office desk for working at. # DeltaV
+>>>>>>> aa9539ab5f8 (Apply suggestions from code review)
   components:
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/Tables/desks.rsi
@@ -305,7 +320,11 @@
       fix1:
         shape:
           !type:PhysShapeAabb
+<<<<<<< HEAD
             bounds: "-0,0,1,0.45"
+=======
+            bounds: "-0.5,-.36,1.45,0.45" # DeltaV
+>>>>>>> aa9539ab5f8 (Apply suggestions from code review)
         density: 55
         mask: # tables should collide with other tables
         - TableMask
@@ -313,16 +332,38 @@
         - TableLayer
 
 - type: entity
+<<<<<<< HEAD
   parent: N14TableDeskWood
   id: N14TableDeskWood2
   suffix: alt
+=======
+  parent: N14TableDeskWoodAlt # DeltaV
+  id: N14TableDeskWood # DeltaV
+>>>>>>> aa9539ab5f8 (Apply suggestions from code review)
   components:
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/64x64_furniture.rsi
     state: desk_wood
+<<<<<<< HEAD
   - type: Construction
     graph: N14TableRecipes
     node: N14DeskWood2
+=======
+  - type: Fixtures # Begin DeltaV Additions
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+            bounds: "-0.35,-0.15,1.25,0.45"
+        density: 55
+        mask: # tables should collide with other tables
+        - TableMask
+        layer:
+        - TableLayer
+  - type: Construction
+    graph: N14TableRecipes
+    node: N14DeskWood # End DeltaV Additions
+>>>>>>> aa9539ab5f8 (Apply suggestions from code review)
 
 - type: entity
   parent: N14FreeTableBase
@@ -332,6 +373,20 @@
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/64x64_furniture.rsi
     state: desk_wood_small
+<<<<<<< HEAD
+=======
+  - type: Fixtures # Begin DeltaV Additions
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+            bounds: "-0.65,-0.15,0.66,0.45"
+        density: 55
+        mask: # tables should collide with other tables
+        - TableMask
+        layer:
+        - TableLayer # End DeltaV Additions
+>>>>>>> aa9539ab5f8 (Apply suggestions from code review)
 
 - type: entity
   parent: N14TableDeskWood
@@ -356,7 +411,7 @@
 - type: entity
   parent: N14TableCasinoCards
   id: N14TableWoodenOvalWide
-  name: oval wooden table
+  name: oval wooden table # DeltaV
   description: An oval table made from wood.
   components:
   - type: Sprite
@@ -369,7 +424,7 @@
 - type: entity
   parent: N14TableCasinoCards
   id: N14TableWoodenSquareWide
-  name: wide wooden table
+  name: wide wooden table # DeltaV
   description: A wide square table made from wood.
   components:
   - type: Sprite
@@ -393,16 +448,21 @@
 - type: entity
   parent: N14FreeTableBase
   id: N14TableCounter
+<<<<<<< HEAD
   name: wood counter
   description: Give me a drink, bartender
+=======
+  name: wood counter # DeltaV
+  description: A wooden counter. Give me a drink, bartender. # DeltaV
+>>>>>>> aa9539ab5f8 (Apply suggestions from code review)
   suffix: full
   components:
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/Tables/counters.rsi
     state: wood_counter
-  - type: Construction
-    graph: N14TableRecipes
-    node: N14WoodCounter
+  - type: Construction # DeltaV
+    graph: N14TableRecipes # DeltaV
+    node: N14WoodCounter # DeltaV
 
 - type: entity
   parent: N14TableCounter
@@ -412,9 +472,9 @@
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/Tables/counters.rsi
     state: wood_counter_bend
-  - type: Construction
-    graph: N14TableRecipes
-    node: N14WoodCounterBend
+  - type: Construction # DeltaV
+    graph: N14TableRecipes # DeltaV
+    node: N14WoodCounterBend # DeltaV
 
 - type: entity
   parent: N14TableCounter
@@ -424,9 +484,9 @@
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/Tables/counters.rsi
     state: wood_counter_intersect
-  - type: Construction
-    graph: N14TableRecipes
-    node: N14WoodCounterIntersect
+  - type: Construction # DeltaV
+    graph: N14TableRecipes # DeltaV
+    node: N14WoodCounterIntersect # DeltaV
 
 - type: entity
   parent: N14TableCounter
