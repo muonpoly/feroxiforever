@@ -498,7 +498,7 @@
   placementMode: SnapgridCenter
   canBuildInImpassable: false
   conditions:
-    - !type:TileNotBlocked
+   - !type:TileNotBlocked
 
 - type: construction
   id: N14TableWoodRound
@@ -510,7 +510,7 @@
   placementMode: SnapgridCenter
   canBuildInImpassable: false
   conditions:
-    - !type:TileNotBlocked
+  - !type:TileNotBlocked
 
 - type: construction
   id: N14TableWoodLow

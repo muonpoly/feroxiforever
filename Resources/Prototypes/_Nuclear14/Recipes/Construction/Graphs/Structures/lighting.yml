@@ -48,7 +48,7 @@
             - !type:SpawnPrototype
               prototype: PartRodMetal1 # DeltaV 
               amount: 1
-            - !type:DeleteEntity {}
+            - !type:DeleteEntity
     # - node: groundLight
       # entity: PoweredLightPostSmallEmpty
       # edges:

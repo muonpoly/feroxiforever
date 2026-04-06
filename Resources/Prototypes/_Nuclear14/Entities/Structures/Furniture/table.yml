@@ -2,7 +2,7 @@
   id: N14FreeTableBase # Base off this for wood tables
   parent: BaseStructure
   name: table
-  description: A square piece of metal standing on four metal legs.
+  description: A square piece of wood standing on four wood legs.
   abstract: true
   components:
   - type: Damageable
@@ -48,6 +48,7 @@
 - type: entity
   parent: N14FreeTableBase # Begin DeltaV Additions
   id: N14FreeMetalTableBase # Base off THIS for metal tables
+  description: A cold piece of metal standing on four metal legs.
   components:
   - type: Damageable
     damageContainer: Inorganic
